@@ -1,0 +1,21 @@
+{
+  "name": "pure-dva",
+  "version": "0.0.1",
+  "description": "Reference on dva, but take out the react-router dependency.",
+  "author": "kayne",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-redux": "^4.0.8",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-saga": "^1.1.3"
+  },
+  "scripts": {
+    "build": "parcel build src/index.js"
+  }
+}
