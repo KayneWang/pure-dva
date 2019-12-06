@@ -1,6 +1,6 @@
 {
   "name": "pure-dva",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Reference on dva, but take out the react-router dependency.",
   "author": "kayne",
   "main": "lib/index.js",
