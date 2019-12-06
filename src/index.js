@@ -72,3 +72,4 @@ function pureDva() {
 
 export default pureDva;
 export { connect } from 'react-redux';
+export { call, put } from 'redux-saga/effects';
