@@ -7,10 +7,10 @@ export default {
   },
   effects: {
     productsQuery: function *() {
-      yield call(delay(800));
+      const { list } = yield call(delay(800));
       yield put({
         type: 'productsQuerySuccess',
-        payload: ['ant-tool', 'roof'],
+        payload: list,
       });
     },
   },
@@ -27,7 +27,9 @@ export default {
 function delay(timeout) {
   return () => {
     return new Promise(resolve => {
-      setTimeout(resolve, timeout);
+      setTimeout(() => {
+        resolve({list: ['ant-tool', 'roof']})
+      }, timeout);
     });
   };
 }
